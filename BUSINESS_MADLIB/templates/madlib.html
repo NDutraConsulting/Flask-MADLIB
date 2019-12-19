@@ -1,0 +1,43 @@
+<!-- my_application/templates/get_example.html -->
+
+{% extends "layout.html" %}
+
+    {% block body %}
+
+    <div>
+      <h2> Madlib Input </h2>
+      <label for="thing" >Business Name: </label>
+      <select type="text" placeholder="Noun" value="noun" id="business_name"/>
+        <option value="amazon">Amazon</option>
+        <option value="amazon">Apple</option>
+        <option value="amazon">Netflix</option>
+        <option value="amazon">Tesla</option>
+      </select>
+
+      </br>
+      <label for="verb" >Business Type: </label>
+      <input type="text" placeholder="Business Type" id="business_type"/>
+
+      </br>
+      <label for="place" >Market Type: </label>
+      <input type="text" placeholder="Market Type" id="market_type"/>
+
+      </br>
+      <label for="place" >Job to be done: </label>
+      <input type="text" placeholder="Job to be done" id="job_to_be_done"/>
+
+      </br>
+      <label for="place" >Revenue Model: </label>
+      <input type="text" placeholder="Revenue Model" id="revenue_model"/>
+
+    </br>
+      <input type="button" value="submit">
+    </div>
+
+
+    <div id="output">
+
+
+    </div>
+
+    {% endblock %}

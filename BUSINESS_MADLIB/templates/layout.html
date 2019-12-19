@@ -1,0 +1,26 @@
+<!-- BUSINESS_MADLIB/templates/layout.html -->
+
+<!doctype html>
+<html>
+    <head>
+        <title>BUSINESS_MADLIB</title>
+        <link rel="stylesheet" href="../static/BUSINESS_MADLIB.css">
+    </head>
+
+    <body>
+
+      <div id="horseman">
+        <input type="button" value="Amazon" onclick="queryDatabase('Amazon')" class="button"/>
+        <input type="button" value="Apple" onclick="queryDatabase('Apple')" class="button"/>
+        <input type="button" value="Netflix" onclick="queryDatabase('Netflix')" class="button"/>
+        <input type="button" value="Tesla" onclick="queryDatabase('Tesla')" class="button"/>
+      </div>
+
+        {% block body %}
+        {% endblock %}
+
+
+    </body>
+    <script src="../static/madlib.js"></script>
+
+</html>

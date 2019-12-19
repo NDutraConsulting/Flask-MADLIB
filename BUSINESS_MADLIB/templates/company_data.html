@@ -1,0 +1,11 @@
+      Madlibs for {{ business_name }}:
+      {% for entry in entries %}
+
+                <li>
+                    <h3>{{ entry.business_name }} is a {{ entry.business_type }} business that works in {{ entry.market_type }} market type, and provide {{entry.job_to_be_done}} service and makes money by {{entry.revenue_model}}.</h3>
+                </li>
+            {% else %}
+                <li>
+                    <em> Unbelievable! There are no Amazon madlibs so far!</em>
+                </li>
+            {% endfor %}
